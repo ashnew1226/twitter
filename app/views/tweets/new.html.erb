@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+
+    <h1>New tweet</h1>
+
+    <%= render "form", tweet: @tweet do |f| %>
+    <%= f.text_area :tweet %>
+    <% end %>
+    <br>
+    <div>
+      <%= link_to "Back to tweets", tweets_path %>
+    </div>
+
+  </div>
+  <div class="col-md-4"></div>
+
+</div>
